@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.NavBar{
+  height: 75px;
+  width: 100vw;
+  background-image:linear-gradient(to bottom,aqua, silver  );
+  
+}
+.NavBarMenuDiv ul{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+ul > li{  
+  margin: 0 auto;
+}
+#Title{
+  text-shadow: gray 2px 2px;
+}
+/* ----------Welcome----------- */
+.Welcome{
+  background-image: url(./images/coliseum.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  margin: 0 0;
+}
+
+/* -----------------Create---------- */
+.Create{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: gold;
+}
+.RulesDiv{
+    background-color: silver;
+    height: 80%;
+    width: 30em;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+  
+}
+.RulesDiv:nth-child(1){
+color: gold;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.CreateBotBoxDiv{
+  background-color: silver;
+  height: 80%;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+.CreateBotBoxDiv h1 span:hover{
+  color: transparent;
+ background-image: url("./images/pokeball_PNG8.png");
+}
+#Pokeball{
+  height: .5em;
+  width: .5em;
+  animation-name: spin;
+  animation-duration: 4s; 
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear
+}
+#Pokeball:hover{
+  height: .75em;
+  width: .75em;
+ }
+@keyframes spin{
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+
+}
+
+.AddButton:hover{
+background-color: greenyellow
+}
+.MinusButton:hover{
+  background-color: red
+}
+.SpecialButton:focus{
+  background-color: greenyellow
+} 
+.SpecialButton:disabled{
+  background-color: black
+} 
+.SpecialButton:hover{
+  background-color: greenyellow
+} 
+/* ------------Collection-------------------- */
+.Collection{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh
+}
+.BattleDiv{
+  min-height: 500px;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.FightingBot{
+  border: solid black 1px;
+  height: 85%;
+  width: 350px;
+  background-color: white;
+}
+.BattlingImg{
+  height: 200px;
+  width: 200px;
+}
+.BattlingImgWiggle{
+  height: 200px;
+  width: 200px;
+  animation-name: shake;
+  animation-duration: 1s; 
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear
+}
+.BattlingImgWiggle2{
+  height: 200px;
+  width: 200px;
+  animation-name: shake;
+  animation-delay: 2s; 
+  animation-duration: 1s; 
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+
+.CollectionDiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: silver;
+  min-height: 50vh;
+}
+.BotPic{
+  height: 100px;
+
+}
+.TopHalfBattleDiv{
+  margin-top: -16px;
+  background-color: red;
+  height: 50%;
+}
+.TopHalfDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: red;
+  height: 50%;
+}
+.BotHalfDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  height: 50%;
+}
+
+.SingleBot{
+  border: solid black 1px;
+  height: 300px;
+  width: 250px;
+  background-color: white;
+  margin: 10px;
+}
+.TopHalfDivCollectionBots{
+
+  background-color: red;
+  height: 50%;
+  display: flex;
+
+}
